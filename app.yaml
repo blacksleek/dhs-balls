@@ -1,0 +1,11 @@
+application: dhs-balls
+version: 2
+runtime: python
+api_version: 1
+
+handlers:
+- url: /Resource
+  static_dir: Resource
+
+- url: .*
+  script: main.py
